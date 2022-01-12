@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet"
+href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+integrity="sha384-
+ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+crossorigin="anonymous">
+ <title>Pregunta 3</title>
+ <a href="../../index.html"><img src="../../Imagenes/home.png" alt="" width="80" height="50" /></a>
+</head>
+<body>
+ <p>
+ <input id="button1" type="button" style="margin:10px 0;" onclick="populateSelect()"
+ value="Consultar lista JSON" />
+ </p>
+ <select id="sel" onchange="show(this)">
+ <option value="">-- Seleccione Materia --</option>
+ </select>
+ <p id="msg"></p>
+ <table border="1">
+ <tr class="bg-info">
+ <th>NRC</th>
+ </tr>
+ <tbody id="myTable">
+ </tbody>
+ </table>
+</body>
+<script>
+ function populateSelect() {
+ var a = `{
+ "2120": "TEC.WEB",
+ "2673": "EDO",
+ "5212": "VECTORIAL",
+ "2345": "PROGRAMACION",
+ "1234": "APLI.WEB",
+ "4580": "ADMINISTRACION"
+ }`
+ var obj = JSON.parse(a);
+ var select = document.getElementById('sel');
+ select.name = "optCountry"
+ select.id = "opt_country"
+ Object.keys(obj).forEach(function (a) {
+ document.getElementById('opt_country').innerHTML += '<option value="' + a + '">' +
+obj[a] + '</option>'
+ })
+ document.getElementById("button1").disabled = true
+ }
+ function show(ele) {
+ var table = document.getElementById('myTable')
+ var row = `<tr>
+ <td>${ele.value}</td>
+ </tr>`
+ table.innerHTML = row
+
+ }
+</script>
+</html>

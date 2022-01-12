@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<ejemplo> 
+ <forma>Primera forma</forma> 
+ <mensaje>Aqui esta el texto de xml mediante el cual se puede comprobar que
+funciona correctamente.</mensaje>
+</ejemplo> 
+

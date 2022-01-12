@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nom_autos>
+ <auto>
+ <marca>Chevrolet</marca>
+ <modelo>Vitara</modelo>
+ <año>2012</año>
+ <placa>PBC-1254</placa>
+ </auto>
+ <auto>
+ <marca>Suzuki</marca>
+ <modelo>Psycho</modelo>
+ <año>2018</año>
+ <placa>PAR-3581</placa>
+ </auto>
+ <auto>
+ <marca>Toyota</marca>
+ <modelo>Doble Cabina</modelo>
+ <año>2015</año>
+ <placa>AHC-8425</placa>
+ </auto>
+ <auto>
+ <marca>KIA</marca>
+ <modelo>Picanto</modelo>
+ <año>2008</año>
+ <placa>ABR-1258</placa>
+ </auto>
+ <auto>
+ <marca>Hyundai</marca>
+ <modelo>LORTMS</modelo>
+ <año>2020</año>
+ <placa>AAc-0123</placa>
+ </auto>
+</nom_autos>

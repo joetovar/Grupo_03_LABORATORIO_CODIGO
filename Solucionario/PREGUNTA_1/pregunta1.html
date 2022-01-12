@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<a href="../../index.html"><img src="../../Imagenes/home.png" alt="" width="80" height="50" /></a>
+
+<p id="demo"></p>
+
+<script>
+var parser, xmlDoc;
+var text = "<carrera><ing>" +
+"<docente>Ingeniería TI</docente>" +
+"<nombre>Ing Fernando Galarraga</nombre>" +
+"<nrc>7383</nrc>" +
+"</ing></carrera>";
+
+parser = new DOMParser();
+xmlDoc = parser.parseFromString(text,"text/xml");
+
+document.getElementById("demo").innerHTML =
+xmlDoc.getElementsByTagName("docente")[0].childNodes[0].nodeValue + " , " +
+xmlDoc.getElementsByTagName("nombre")[0].childNodes[0].nodeValue + " , " +
+xmlDoc.getElementsByTagName("nrc")[0].childNodes[0].nodeValue;
+</script>
+
+</body>
+</html>
